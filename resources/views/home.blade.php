@@ -18,7 +18,7 @@
                     <div class="col-md-8">
                         <ul>
                             @foreach ($menu as $key => $value)
-                                <li> <a href="{{route($value)}}"></a> {{$key}}</li>
+                                <li> <a href="{{route($value)}}">{{$key}}</a></li>
                             @endforeach
                         </ul>
                     </div>
