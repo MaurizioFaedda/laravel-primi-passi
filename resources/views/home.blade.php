@@ -29,7 +29,8 @@
         <main>
             <div class="container">
                 <h1>Home</h1>
-                
+                <p>Nella <a href="{{route('products')}}">pagina prodotti</a> ho creato un array di array nel data della sua Route per poi stamparlo con un foreach.</p>
+                <p>Nella <a href="{{route('contacts')}}">pagina contatti</a> ho usato un foreach con una condizione loop per non stampare un hr nell'ultimo ciclo</p>
             </div>
         </main>
         <footer>
