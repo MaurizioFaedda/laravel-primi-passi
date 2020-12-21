@@ -32,7 +32,33 @@ Route::get('/prodotti', function () {
             'Prodotti' => 'products',
             'Chi siamo' => 'about',
             'Contatti' => 'contacts',
-        ]
+        ],
+        'products_list' => [
+            [
+                'image' => 'https://picsum.photos/id/100/200/300',
+                'artist' =>'Mario',
+            ],
+            [
+                'image' => 'https://picsum.photos/id/101/200/300',
+                'artist' => 'Sara',
+            ],
+            [
+                'image' => 'https://picsum.photos/id/102/200/300',
+                'artist' => 'Filippo',
+            ],
+            [
+                'image' => 'https://picsum.photos/id/103/200/300',
+                'artist' => 'Alice',
+            ],
+            [
+                'image' => 'https://picsum.photos/id/104/200/300',
+                'artist' => 'Luca',
+            ],
+            [
+                'image' => 'https://picsum.photos/id/106/200/300',
+                'artist' => 'Lucia',
+            ],
+        ],
     ];
     return view('products', $data);
 })->name('products');

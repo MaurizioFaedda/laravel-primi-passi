@@ -44,3 +44,9 @@ header .menu .my-nav ul li a {
   color: #000;
 }
 
+.card-photo {
+  float: left;
+  align-items: center;
+  padding: 80px;
+}
+

@@ -27,7 +27,21 @@
         </header>
         <main>
             <div class="container">
-                <h1>Prodotti</h1>
+                <h3>Prodotti</h3>
+                <hr>
+                <div class="products-box">
+                    <h4>Compra un poster realizzato dai nostri migliori fotografi</h4>
+                    <div class="my-products">
+                        @foreach ($products_list as $value)
+                            <div class="card-photo text-center">
+                                <img src="{{$value['image']}}" alt="">
+                                <p>{{$value['artist']}}</p>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+
+
             </div>
         </main>
         <footer>
