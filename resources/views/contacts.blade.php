@@ -13,7 +13,7 @@
                 <div class="row menu">
                     <div class="col-md-4 logo">
                         <h2>Laravel</h2>
-                        
+
                     </div>
                     <div class="col-md-8 my-nav">
                         <ul class="">
@@ -28,7 +28,15 @@
         </header>
         <main>
             <div class="container">
-                <h1>Contatti</h1>
+                <h3>Contatti</h3>
+                @foreach ($my_contacts as $value)
+                    <p>{{$value['name']}}</p>
+                    <p>{{$value['number']}}</p>
+                    @if (!$loop->last)
+                        <hr>
+                    @endif
+
+                @endforeach
             </div>
 
         </main>

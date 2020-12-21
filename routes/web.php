@@ -82,7 +82,21 @@ Route::get('/contatti', function () {
             'Prodotti' => 'products',
             'Chi siamo' => 'about',
             'Contatti' => 'contacts',
-        ]
+        ],
+        'my_contacts' => [
+            [
+                'name' => 'Mario',
+                'number' => '0290393',
+            ],
+            [
+                'name' => 'Sara',
+                'number' => '0290393',
+            ],
+            [
+                'name' => 'Mauro',
+                'number' => '0290393',
+            ],
+        ],
     ];
     return view('contacts', $data);
 })->name('contacts');
