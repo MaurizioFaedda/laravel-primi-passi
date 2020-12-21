@@ -4,10 +4,35 @@
         <meta charset="utf-8">
         <title></title>
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     </head>
     <body>
-        <h1>hello world</h1>
-        <h3> <a href="{{ route('about') }}"> chi siamo</a> </h3>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 d-flex align-items-baseline">
+                        <h2>Laravel</h2>
+                        <small>Primi passi</small>
+                    </div>
+                    <div class="col-md-8">
+                        <ul>
+                            <a href="{{route('about')}}"> </a>
+                            @foreach ($menu as $key => $value)
+                                <li> <a href="{{route($value)}}"></a> {{$key}}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <main>
+
+        </main>
+        <footer>
+
+        </footer>
 
     </body>
 </html>

@@ -3,8 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title></title>
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     </head>
     <body>
-        <h2>404 erorre =( </h2>
+        <h1>contatti</h1>
     </body>
 </html>
