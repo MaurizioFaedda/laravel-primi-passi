@@ -17,6 +17,7 @@ Route::get('/', function () {
     $data = [
         'menu' => [
             'Home' => 'home',
+            'Prodotti' => 'products',
             'Chi siamo' => 'about',
             'Contatti' => 'contacts',
         ]
@@ -24,10 +25,38 @@ Route::get('/', function () {
     return view('home', $data);
 })->name('home');
 
+Route::get('/prodotti', function () {
+    $data = [
+        'menu' => [
+            'Home' => 'home',
+            'Prodotti' => 'products',
+            'Chi siamo' => 'about',
+            'Contatti' => 'contacts',
+        ]
+    ];
+    return view('products', $data);
+})->name('products');
+
 Route::get('/chi-siamo', function () {
-    return view('about');
+    $data = [
+        'menu' => [
+            'Home' => 'home',
+            'Prodotti' => 'products',
+            'Chi siamo' => 'about',
+            'Contatti' => 'contacts',
+        ]
+    ];
+    return view('about', $data);
 })->name('about');
 
 Route::get('/contatti', function () {
-    return view('contacts');
+    $data = [
+        'menu' => [
+            'Home' => 'home',
+            'Prodotti' => 'products',
+            'Chi siamo' => 'about',
+            'Contatti' => 'contacts',
+        ]
+    ];
+    return view('contacts', $data);
 })->name('contacts');

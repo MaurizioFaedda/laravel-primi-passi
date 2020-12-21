@@ -12,8 +12,7 @@
             <div class="container">
                 <div class="row menu">
                     <div class="col-md-4 logo">
-                        <h2>Laravel</h2>
-                        
+                        <h2 class="">Laravel</h2>
                     </div>
                     <div class="col-md-8 my-nav">
                         <ul class="">
@@ -28,7 +27,7 @@
         </header>
         <main>
             <div class="container">
-                <h1>Home</h1>
+                <h1>Prodotti</h1>
             </div>
         </main>
         <footer>

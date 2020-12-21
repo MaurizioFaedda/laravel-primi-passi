@@ -1,0 +1,33 @@
+header{
+    padding-top: 10px;
+    .menu{
+        height: 100px;
+        display: flex;
+        align-items: center;
+        .logo{
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            h2{
+                margin: 0;
+            }
+        }
+        .my-nav{
+            display: flex;
+            justify-content: flex-end;
+            ul{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin: 0;
+                li{
+                    a{
+                        color: #000;
+                    }
+                }
+            }
+        }
+
+    }
+}
